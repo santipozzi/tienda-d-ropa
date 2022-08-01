@@ -7,53 +7,58 @@
     <title>Document</title>
     <link rel="shorcut icon" href="../images/7104556_1.png">
     <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../animate-wow/animate.min.css">
+    <script src="../animate-wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
-<nav>
-    <a href='../index.html' >Index</a>
-        <a href='Contactos.html'>Contacto</a>
-        <a href='Empresa.html'>Empresa</a>
-        <a href='Productos.html'>Productos</a>
-        <a href='Servicios.html'>Servicios</a>
-</nav>
+
 
 <body class="bodyprod">
-    <h1>Productos</h1>
-    <div class="padre" id="divProductos">
-        <div class="hijo">
-            <h3>Zapatillas Converse</h3>
-            <img src="../images/golf-le-fleur-x-converse-03.jpg" alt="Converse Shoes"  height="300">
-        </div>
-        <div class="hijo">
-           <h3>Zapatillas Le Fleur</h3> 
-            <img src="../images/lefleur.jpg" alt="Lacoste Shoes" height="300">
-            </div>  
-        <div class="hijo">
-          <h3>  Remeras y tops</h3>
-            <img src="../images/remera.jpg" alt="remera" height="300">
-        </div>
-        <div class="hijo">
-            <h4>Buzos y Camperas</h4>
-            <img src="../images/buzos.jpg" alt="buzos" height="300">
-        </div>
-        <div class="hijo">
-            <h4>Accesorios</h4>
-            <img src="../images/gorra.webp" alt="gorrita" height="300">
-        </div>
-        <div class="hijo">
-            <h4>Con tu primera compra superando 300USD te enviamos un regalo!</h4>
-            <img src="../images/fundas.webp" height="300">
-        </div>
-            
-            
-            
-    
-         </ul>
+    <nav class="productosNav"> 
+        <a href='../index.html' >Index</a>
+            <a href='Contactos.html'>Contacto</a>
+            <a href='Empresa.html'>Empresa</a>
+            <a href='Productos.html'>Productos</a>
+            <a href='Servicios.html'>Servicios</a>
+    </nav>
+    <main class="productosMain">
+        <h1 class="wow animate__animated animate__backOutDown">Productos</h1>
+        <div class="padre" id="divProductos">
+            <div class="hijo">
+                <h3>Zapatillas Converse</h3>
+                <img src="../multimedia/golf-le-fleur-x-converse-03.jpg" alt="Converse Shoes"  height="300">
+            </div>
+            <div class="hijo">
+               <h3>Zapatillas Le Fleur</h3> 
+                <img src="../multimedia/lefleur.jpg" alt="Lacoste Shoes" height="300">
+                </div>  
+            <div class="hijo">
+              <h3>  Remeras y tops</h3>
+                <img src="../multimedia/remera.jpg" alt="remera" height="300">
+            </div>
+            <div class="hijo">
+                <h4>Buzos y Camperas</h4>
+                <img src="../multimedia/buzos.jpg" alt="buzos" height="300">
+            </div>
+            <div class="hijo">
+                <h4>Accesorios</h4>
+                <img src="../multimedia/gorra.webp" alt="gorrita" height="300">
+            </div>
+            <div class="hijo">
+                <h4>Con tu primera compra superando 300USD te enviamos un regalo!</h4>
+                <img src="../multimedia/fundas.webp" height="300">
+            </div>
+         </div>
         
-      
-    </div>
+    </main>
+   <div class="productosDiv">
     <h1 class="tituloprod">Busqueda</h1>
-        <input type="search" placeholder="¿Que esta buscando?"> 
-        <input type="submit" placeholder="Buscar">
+    <input type="search" placeholder="¿Que esta buscando?"> 
+    <input type="submit" placeholder="Buscar">
+   </div>
+    
       
 
 
