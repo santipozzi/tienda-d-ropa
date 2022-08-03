@@ -8,8 +8,10 @@ body {
     background-image: url(../multimedia/3403318.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left;
     font-family: "Cafe";
-    
+
+
 }
 
 
@@ -70,8 +72,16 @@ body {
     background-size: cover;
 }
 
+.padre{
+    display: grid;
+    grid-template-columns: 5fr 3fr 5fr ;
+    grid-template-rows: 600px 600px;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 500px 500px;
+    column-gap: 100px;
+    row-gap: 50px;
 
-
+}
 
 header{
     grid-area: header;
@@ -85,7 +95,13 @@ section #productos{
     grid-area: productos;
 }
 
-
+.bodyprod{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+}
 section #servicios{
     grid-area: servicios;
 }
@@ -152,30 +168,27 @@ aside{
 
     body{
         width: 100%;
-      
-        grid-template-columns:auto auto auto;
+        
+        grid-template-columns:subgrid;
         grid-template-rows: auto auto auto;
-        grid-template-areas: 
-        "nav nav nav"
-        "main main main"
-        "fin fin fin";
+        grid-template-areas: "nav" "main" "fin";
     }
-     
-    .productosNav{
-        grid-area: nav;
+    .img-home{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
     }
 
-    .productosMain{
-        grid-area: main;
-    }
-
-    .productosDiv{
-        grid-area: fin;
-    }
     .img{
         width: 300px;
     }
-    
+    .bodyprod{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20%;
+        margin: 25%;
+    }
+
     #divProductos{
         display: grid;
     grid-template-columns: 50% auto;
@@ -184,7 +197,8 @@ aside{
 
     .divContactos{
         display: flex;
-      
+        flex-direction: row;
+        justify-content: space-between;
     }
     .contactos{
         display: flex;
@@ -195,6 +209,15 @@ aside{
     .boxModel{
         display: none;
         
+    }
+
+    .btn{
+        background-color: blue;
+    }
+
+    .footerCon{
+        background-color: white;
+        color: black;
     }
 
 
@@ -222,7 +245,7 @@ aside{
     }
 }
 
-@media screen and (min-width: 321px) and (max-width: 760px){ 
+@media screen and (min-width: 321px and max-width: 760px){ 
     #main{
         grid-template-columns: 15% auto;
         grid-template-rows: 15% 10% auto;
@@ -243,7 +266,11 @@ aside{
        flex-direction: column;
        margin-top: 20px;
    }
+
+
 }
-
-
+.input{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
 }

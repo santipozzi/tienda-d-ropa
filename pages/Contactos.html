@@ -5,49 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
-    <link rel="shorcut icon" href="../images/7104556_1.png">
+    <link rel="shorcut icon" href="../multimedia/7104556_1.png">
     <link rel="stylesheet" href="../estilos/estilos.css">
-   
+    <link rel="stylesheet" href="../estilos/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../animate-wow/animate.min.css">
+    <script src="../animate-wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 <body class="fondoContactos">
-    <div class="divContactos"> 
-        <a href='../index.html' >Index</a>
-        <a href='Contactos.html'>Contacto</a>
-        <a href='Empresa.html'>Empresa</a>
-        <a href='Productos.html'>Productos</a>
-        <a href='Servicios.html'>Servicios</a>
-    </div>    
+    
+    <nav class="navbar navbar-expand-lg bg-light">
+    <img src="/multimedia/12401137.png" height="60">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">Golf</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Contactos.html">Contactos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Empresa.html">Empresa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Productos.html">Productos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Servicios.html" role="button" data-bs-toggle="Servicios" aria-expanded="false">
+            Servicios
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Servicios #1</a></li>
+            <li><a class="dropdown-item" href="#">Servicios #2</a></li>
+            <li><a class="dropdown-item" href="#">Unete a nuestra flag :)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>    
+    
+<div class="mb-3">
+  <form>
+    <div class="mb-3">
+     <h3>Inicie Sesion</h3> 
+      <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electronico a nadie.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Contrasñea</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Recordar contraseña</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+  </div>
+  <br>
     <aside>
         <form action="" method="get" enctype="multipart/form-data">
             <fieldset class="contactos">
-                <legend>Registrate o inicia secion</legend>
-                <input type="email" id="email" name="email" value="correo electronico">
+                <legend>Registrese</legend>
+                <input class="input
+                " type="email" id="email" name="email" value="correo electronico" width="100%">
                 <br>
                 <label for="nombre"></label>
                 <br>
-                <label for="apellido"></label>
-                <input type="password" placeholder="Ingrese su contraseña">
-                <input type="password" placeholder="Repita su contraseña">
-                <input type="submit" placeholder="Enviar">
-    
-                <input type="reset" placeholder="Resetear">
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="inputPassword6" class="col-form-label">Contraseña</label>
+                  </div>
+                  <div class="col-auto">
+                    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-auto">
+                    <span id="passwordHelpInline" class="form-text">
+                      Debe ser de 8-20 caracteres.
+                    </span>
+                  </div>
+                  <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                      <label for="inputPassword6" class="col-form-label">Repita contraseña</label>
+                    </div>
+                    <div class="col-auto">
+                      <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-auto">
+                      
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class=" btn">Resetear</button>
             </fieldset>
 
-        </form>
+        
+        
+        
+        
+        
+        
+        
+          </form>
+        <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title wow animate__animated animate__lightSpeedInRight">Contactanos!</h5>
+          <h6 class="card-subtitle mb-2 text-muted wow animate__animated animate__zoomOutUp">Promos y descuentos increibles</h6>
+          <p class="card-text">Registrandote vas a tener un 70% de descuento en tu primera compra pasando los 300USD y va con fundas de regalo, e impererdibles promos en las que te vamos a estar notificando por tu email.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
 
     </aside>
    
    
    
    
-    <ul>
-        <li><a href="https://www.instagram.com/golfwang/feed/?hl=es">Instagram</a></li>
-        <li><a href="https://twitter.com/tylerthecreator">twitter</a></li>
-        <li><a href="https://golfwang.tumblr.com/">Tumbrl</a></li>
-        <li><a href="https://golfwang.tumblr.com/">GolfLeFleur</a></li>
-
-    </ul>
+    
    
     
 </body>
+<footer class="footerCon">
+  <ul>
+    <li><a href="https://www.instagram.com/golfwang/feed/?hl=es">Instagram</a></li>
+    <li><a href="https://twitter.com/tylerthecreator">twitter</a></li>
+    <li><a href="https://golfwang.tumblr.com/">Tumbrl</a></li>
+    <li><a href="https://golfwang.tumblr.com/">GolfLeFleur</a></li>
+
+</ul>
+</footer>
 </html>
