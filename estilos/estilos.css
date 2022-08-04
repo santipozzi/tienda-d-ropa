@@ -146,17 +146,10 @@ aside{
         grid-area: nav;
     }
     
-    #productos{
-        display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-rows: 300px 300px;
-    column-gap: 10%;
-    align-items: flex-start;
-    justify-items: first baseline;
-    justify-items: flex-start;
+    
     
 }
-    }
+    
     
     #border{
         display: none;
@@ -189,11 +182,7 @@ aside{
         margin: 25%;
     }
 
-    #divProductos{
-        display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-rows: 300px 300px;
-    }
+    
 
     .divContactos{
         display: flex;
@@ -237,15 +226,18 @@ aside{
     column-gap: 10px;
     row-gap: 10px; */
 
-    #divProductos{
-        display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-rows: 300px 300px;
-    
-    }
+  
+
+  
+
 }
 
-@media screen and (min-width: 321px and max-width: 760px){ 
+
+
+
+
+
+@media screen and (min-width: 321px) and (max-width: 760px){ 
     #main{
         grid-template-columns: 15% auto;
         grid-template-rows: 15% 10% auto;
@@ -273,4 +265,7 @@ aside{
     display: flex;
     justify-content: left;
     align-items: flex-start;
+}
+
+
 }
