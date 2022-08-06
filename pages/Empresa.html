@@ -8,29 +8,49 @@
     <link rel="shorcut icon" href="../multimedia/7104556_1.png">
     <link rel="stylesheet" href="../estilos/estilos.css">
     <link rel="stylesheet" href="../animate-wow/animate.min.css">
-    <link rel="stylesheet" href=".."
+    <link rel="stylesheet" href="/estilos/css/bootstrap.min.css">
     <script src="animate-wow/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
 </head>
 <body class="Empresa" id="Empresa1">
-<nav class="navegacion">
-    <ul class="menu">
-        <li><a href='../index.html' >Index</a></li>
-        <li><a href='Contactos.html'>Contacto</a></li>
-        <li><a href='Empresa.html'>Empresa</a></li>
-        <li><a href='Servicios.html'>Servicios</a></li>
-        <li><a href='Productos.html'>Productos</a></li>
-            <ul class="submenu">
-                <li><a href="#">Servicio #1</a></li>
-                <li><a href="#">Servicio #2</a></li>
-                <li><a href= "#">Servicio #3</a></li>     
-            </ul>     
-               
-        
-    </ul>
-</nav>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <img src="/multimedia/12401137.png" height="60" alt="">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Golf</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/pages/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/pages/Contactos.html">Contactos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/Empresa.html">Empresa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/Productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/pages/Servicios.html" role="button" data-bs-toggle="Servicios" aria-expanded="false">
+                      Servicios
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Servicios #1</a></li>
+                      <li><a class="dropdown-item" href="#">Servicios #2</a></li>
+                      <li><a class="dropdown-item" href="#">Unete a nuestra flag :)</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>    
+        <main>
     <h2 style="color: purple" class="Empresa__titulo wow animate__animated animate__jello" id="titulo">GolfWang Clothes</h2>
         <p style="color: aliceblue;" class="Empresa__contexto">Golf Wang es una marca estadounidense de ropa de calle establecida en 2011 por el músico estadounidense Tyler, the Creator . El nombre Golf Wang es un Spoonerism de su colectivo musical basado en Los Ángeles, Odd Future Wolf Gang Kill Them All (OFWGKTA) o Odd Future para abreviar, del cual fue co-fundador .Golf Wang es conocido por su colorida estética visual. Desde entonces, la marca se ha expandido más allá de su afiliación con Odd Future y se ha establecido en la industria de la moda.Está co-diseñado por Tyler, the Creator y Phil Toselli. La marca ofrece ropa, calzado a través de Golf le Fleur, joyas y otros productos. "Holiday 1991", el primer lookbook de la marca, fue lanzado el 11 de diciembre de 2011.</p> 
     <h3 style="color: purple;">Google maps</h3>
@@ -43,26 +63,27 @@
     <br>
     <br>
     <h1 style="color: yellow; display: flex;" class="titulito wow animate__animated animate__flip" >Nuevas colaboraciones</h1>
-    <section class="section">
-        <h2 style="display: flex;">Lacoste</h2>
-        <p class="section__texto">En un homenaje al tenis de la decada de los ochentas y con el sello creativo de Le Fleur; la marca de Tyler the Creator, su colaboración con Lacoste llega a Argentina con un inventario muy limitado.
-
-            Agotada en su totalidad en Estados Unidos la colección consta de 6 piezas unisex en colores pastel que van desde la icónica Polo a una chamarra en tejido extra suave de color rosa pálido.</p>
-        <div>
-            Lacoste <strong>Le Fleur</strong>
-        </div>
-            <img src="../multimedia/tyler-the-creator-lacoste-golf-le-fleur-collection-1.jpg" width="120%" height="60%">
-     </section>
-     <section class="section1">
-         <h2 style="color: yellow;" class="converse">Converse</h2>
-         <div>
-             CONVERSE<strong>Le Fleur</strong>
-         </div>   
-         <p style="color: aliceblue; display: inline; width: 50%;" class="section_textodos">Nos unimos para hacer de las mejores zapatillas, stock acabado en Estados Unidos en la primera semana y los ultimos modelos nuevos estan llegando a Argentina</p>
-            <img src="../multimedia/blog-converse-golf-le-fleur-ox-jade-lime-california-blue-geranium-pink_2048x2048.webp" height="40%%">
-        </section>
-
-
+    
+    <section class="colaboraciones">
+        <div class="card" style="width: 18rem;">
+            <img src="/multimedia/tyler-the-creator-lacoste-golf-le-fleur-collection-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lacoste</h5>
+              <p class="card-text">En un homenaje al tenis de la decada de los ochentas y con el sello creativo de Le Fleur; la marca de Tyler the Creator, su colaboración con Lacoste llega a Argentina con un inventario muy limitado.</p>
+              <a href="/pages/Productos.html" class="btn btn-primary">Ir al carrito</a>
+            </div>
+          </div>
+   
+            <div class="card" style="width: 18rem;">
+                <img src="/multimedia/blog-converse-golf-le-fleur-ox-jade-lime-california-blue-geranium-pink_2048x2048.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Converse</h5>
+                  <p class="card-text">      Agotada en su totalidad en Estados Unidos la colección consta de 6 piezas unisex en colores pastel que van desde las iconicas zapatilals en tejido extra suave de color rosa pálido.</p>
+                  <a href="/pages/Productos.html" class="btn btn-primary">Ir a carrito</a>
+                </div>
+              </div>
+    
+    </section>   
     
 </body>
 </html>
