@@ -53,62 +53,13 @@
 </nav>    
     
 <div class="mb-3">
-  <form>
-    <div class="mb-3">
-     <h3>Inicie Sesion</h3> 
-      <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electronico a nadie.</div>
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Contrasñea</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Recordar contraseña</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
-  </form>
-  </div>
-  <br>
-    <aside>
-        <form action="" method="get" enctype="multipart/form-data">
-            <fieldset class="contactos">
-                <legend>Registrese</legend>
-                <input class="input
-                " type="email" id="email" name="email" value="correo electronico" width="100%">
-                <br>
-                <label for="nombre"></label>
-                <br>
-                <div class="row g-2 align-items-left">
-                  <div class="md-4">
-                    <label for="inputPassword6" class="col-form-label">Contraseña</label>
-                  </div>
-                  <div class="col-auto">
-                    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-                  </div>
-                  <div class="col-auto">
-                    <span id="passwordHelpInline" class="form-text">
-                      Debe ser de 8-20 caracteres.
-                    </span>
-                  </div>
-                <form class="placeholder"> 
-                  <div class="row g-2 align-items-left">
-                    <div class="col-auto">
-                      <label for="inputPassword6" class="col-form-label">Repita contraseña</label>
-                    </div>
-                    <div class="col-auto">
-                      <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-                    </div>
-                    <div class="col-auto">
-                </form>      
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-                <button type="reset" class=" btn">Resetear</button>
-            </fieldset>
-
+  <form class="grid-form"> 
+   <label class="texto">Ingresar</label>
+   <input type="email" placeholder="ingrese correo electronico" class="correo">
+   <input type="text" placeholder="ingrese contraseña" class="contra">
+   <input type="text" placeholder="repita su contraseña" class="repetir">
+   <input type="submit" placeholder="enviar" class="enviar">
+   <input type="reset" placeholder="resetear" class="reset">
         
         
         
