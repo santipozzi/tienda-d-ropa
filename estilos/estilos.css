@@ -208,7 +208,9 @@ body {
     grid-template-columns: 15% auto;
     grid-template-rows: 15% 10% auto;
     column-gap: 10px;
-    row-gap: 10px; }
+    row-gap: 10px; 
+    flex-direction: column;}
+    
   #header {
     display: grid;
     grid-template-columns: 15% auto;
@@ -221,13 +223,21 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 20px; } }
+  #productosGrid{
+    display: grid;
+    grid-template: auto;
+    grid-template-rows: auto;
+  }
 
 @media screen and (min-width: 321px) and (max-width: 760px) {
   .input {
     display: flex;
     justify-content: left;
     align-items: flex-start; } }
-
+  .card-body{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
 .texto {
   grid-area: texto; }
 
