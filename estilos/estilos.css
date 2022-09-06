@@ -69,6 +69,26 @@ body {
   background-image: url(../multimedia/57-572432_golf-le-fleur-mono.jpg);
   background-size: cover; }
 
+.formulos{
+  width: 50%;
+  margin: 0 auto;
+}
+.formolo{
+  width: 50%;
+  margin: 0 auto;
+}
+.formula{
+  width: 50%;
+  margin: 0 auto;
+}
+.enviarq{
+  width: 50%;
+  margin: 0 auto;
+}
+button{
+  
+  margin: 0 auto;
+}
 .padre {
   display: grid;
   grid-template-columns: 5fr 3fr 5fr;
