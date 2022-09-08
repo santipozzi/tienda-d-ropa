@@ -101,6 +101,11 @@ button{
 header {
   grid-area: header; }
 
+.productosGrid{
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
 footer {
   grid-area: footer; }
 
@@ -222,7 +227,10 @@ body {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto; }
-
+.productosGrid{
+  display: grid;
+  grid-template-columns: auto auto;
+}
 @media screen and (min-width: 321px) and (max-width: 760px) {
   #main {
     grid-template-columns: 15% auto;
@@ -231,11 +239,7 @@ body {
     row-gap: 10px; 
     display: flexbox;
     flex-direction: column; }
-  #h2{
-    font-size: 1px;
-    display: flex;
-    flex-direction: column;
-  }
+  
   #header {
     display: grid;
     grid-template-columns: 15% auto;
