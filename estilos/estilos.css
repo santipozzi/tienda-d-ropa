@@ -89,6 +89,13 @@ button{
   
   margin: 0 auto;
 }
+.main{
+  display: grid;
+  grid-template-columns: 15% auto;
+  grid-template-rows: 15% 10% auto;
+  column-gap: 10px;
+  row-gap: 10px; 
+}
 .padre {
   display: grid;
   grid-template-columns: 5fr 3fr 5fr;
@@ -207,21 +214,8 @@ body {
   background-color: white;
   color: black; }
 
-@media screen and (max-width: 1200px) {
-  /* #main{
-        display: grid;
-        grid-template-columns: 15% auto;
-        grid-template-rows: 15% 10% auto;
-        column-gap: 10px;
-        row-gap: 10px;
-    }
 
-#header{
-    display: grid;
-    grid-template-columns: 15% auto;
-    grid-template-rows: 15% 10% auto;
-    column-gap: 10px;
-    row-gap: 10px; */ }
+ 
 
 .colaboraciones {
   display: grid;
@@ -231,7 +225,7 @@ body {
   display: grid;
   grid-template-columns: auto auto;
 }
-@media screen and (min-width: 321px) and (max-width: 760px) {
+@media (min-width: 321px) and (max-width: 760px) {
   #main {
     grid-template-columns: 15% auto;
     grid-template-rows: 15% 10% auto;
@@ -247,7 +241,7 @@ body {
     column-gap: 10px;
     row-gap: 10px; } }
 
-@media screen and (min-width: 321px) and (max-width: 760px) and (max-width: 760px) {
+@media (min-width: 321px) and (max-width: 760px) and (max-width: 760px) {
   #divProductos {
     display: flex;
     flex-direction: column;
@@ -265,7 +259,7 @@ body {
     flex-direction: column;
   }
 
-@media screen and (min-width: 321px) and (max-width: 760px) {
+@media  (min-width: 321px) and (max-width: 760px) {
   .input {
     display: flex;
     justify-content: left;
