@@ -79,8 +79,38 @@ function inversor() {
 }
 }
 
+let unUsuario = {
+    tipoCorreo: "santiagopozzi@gmail.com",
+    tipoNumero: "35875126814",
+    apellidos: "Pozzi Loza",
+    nombres: "Santiago V.",
+
+}
+
+let otroUsuario
+
+console.log ("--> Este es el mail del usuario", unUsuario);
+console.log ("-->Este es el numero del usuario", unUsuario[tipoNumero]);
+unUsuario.apellidos = "Pozzi Loza";
+unUsuario["tipoCorreo"] = "santiagopozzi@gmail.com";
+console.log ("Estos son los datos del Usuario");
 
 
+
+
+function Usuario (tipoCorreo, tipoNumero, apellidos, nombres, telefono ) {
+    this.tipoCorreo = tipoCorreo;
+    this.tipoNumero = tipoNumero;
+    this.apellidos = apellidos;
+    this.nombres = nombres;
+    this.telefono = telefono;
+
+    this.toString = function () {
+        return this.apellidos + "," + this.nombres
+    }
+}
+
+ 
 
 
 
