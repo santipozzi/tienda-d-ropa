@@ -179,6 +179,22 @@
     <li><a href="https://twitter.com/tylerthecreator">twitter</a></li>
     <li><a href="https://golfwang.tumblr.com/">Tumbrl</a></li>
     <li><a href="https://golfwang.tumblr.com/">GolfLeFleur</a></li>
+    <script>
+      window.addEventListener("load", function(event) {
+         let boton_carrito = document.getElementById("btn-carrito")
+         let carrito = document.getElementById("carrito")
+         let cancel = document.getElementById("button-cancel")
+         boton_carrito.addEventListener("click", function(event) {
+
+             carrito.classList.toggle("oculto")
+         })
+         cancel.addEventListener("click", function(event) {
+
+carrito.classList.toggle("oculto")
+})
+     });
+ </script>
+ <script src="./js/main.js"></script>
 
 </ul>
 </footer>

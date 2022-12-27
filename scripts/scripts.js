@@ -1,4 +1,4 @@
-function saludar(params) {
+/* function saludar(params) {
     console.log("¡Bienvenido a Golf Wang Clothes, el mejor estilo ;)!")
 }
 
@@ -74,10 +74,10 @@ function inversor() {
     monto = prompt ("Ingrese monto");
     }
  console.log ("Nuestro equipo lo contactara a la brevedad");
- alert("Nuestro equipo lo contactara a la brevedad");
+ alert("Nuestro equipo lo contactara a la brevedad");     
 
 }
-}
+}                                       
 
 let unUsuario = {
     tipoCorreo: "santiagopozzi@gmail.com",
@@ -93,7 +93,7 @@ console.log ("--> Este es el mail del usuario", unUsuario);
 console.log ("-->Este es el numero del usuario", unUsuario[tipoNumero]);
 unUsuario.apellidos = "Pozzi Loza";
 unUsuario["tipoCorreo"] = "santiagopozzi@gmail.com";
-console.log ("Estos son los datos del Usuario");
+console.log ("Estos son los datos del Usuario"); */
 
 
 
@@ -110,7 +110,105 @@ function Usuario (tipoCorreo, tipoNumero, apellidos, nombres, telefono ) {
     }
 }
 
+let ListaProductos = ["Remeras, Pantalones , Zapatillas, Buzos y camperas, Accesorios"];
+console.log(
+    "-->Nuestros Prodctos (Golf,Lacoste,Converse):",
+    ListaProductos.length
+)
+
+
+
+let productosCompra = [
+    
+]
+
+
+
+if (localStorage){
+    
+  if(localStorage.getItem('productosCompra') !== undefined && localStorage.getItem('productosCompra')){
+   
+
  
+  }else{
+    localStorage.setItem("productosCompra", JSON.stringify(productosCompra))
+  
+  }
+}
+actualizarCarrito()
+function actualizarCarrito(){
+    var lista = document.getElementById("lista_carrito")
+    lista.innerHTML = "";
+    var productos_carrito = JSON.parse(localStorage.getItem('productosCompra'))
+for(let p of productos_carrito){
+
+    var boton =  document.createElement("button");
+    boton.classList.add("boton-carrito")
+    boton.innerText = "Eliminar"
+    boton.setAttribute("data-id",p.id)
+
+    var html = ''
+    
+    lista.innerHTML += html
+}
+
+var botones_eliminar = document.getElementsByClassName("boton-carrito")
+
+for(let b of botones_eliminar){
+    b.addEventListener("click", function(event) {
+        console.log(b);
+        var id = event.target.getAttribute("data-id")
+        var productos = JSON.parse(localStorage.getItem('productosCompra'))
+     index = 0
+      for(let p of productos){
+    
+        if(p.id == id){
+           productos.splice(index , 1);
+           localStorage.setItem("productosCompra", JSON.stringify(productos))
+           actualizarCarrito()
+        }
+        index++
+       }
+      
+
+    })
+}
+
+}
 
 
+
+
+
+
+var botones = document.getElementsByClassName("button_comprar")
+
+for(let b of botones){
+    
+    b.addEventListener("click", function(event) {
+        var nombre = event.target.getAttribute("data-nombre")
+        var precio = event.target.getAttribute("data-precio")
+        var url = event.target.getAttribute("data-url")
+        var id = event.target.getAttribute("data-id")
+       var productos = JSON.parse(localStorage.getItem('productosCompra'))
+      var contiene = false;
+       for(let p of productos){
+        if(p.id == id){
+            contiene = true;
+        }
+       }
+       if(contiene == false){
+            var producto_nuevo = {
+                id: id,
+                nombre: nombre,
+                url: url,
+                precio: precio,
+            }
+            productos.push(producto_nuevo)
+            localStorage.setItem("productosCompra", JSON.stringify(productos))
+          actualizarCarrito()
+       }
+     
+    })
+}
 

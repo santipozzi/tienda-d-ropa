@@ -56,6 +56,7 @@
                 </ul>
               </li>
             </ul>
+            <li><img src="/multimedia/211707_cart_icon.svg" alt="" id="btn-carrito" class="carrito"></li>
           </div>
         </div>
       </nav>    
@@ -140,6 +141,22 @@
     <button type="button" class="btn btn-primary instagram">Instagram</button>
     <button type="button" class="btn btn-primary youtube">Youtube</button>
     <button type="button" class="btn btn-primary Tumblr">Tumblr</button>
+    <script>
+      window.addEventListener("load", function(event) {
+         let boton_carrito = document.getElementById("btn-carrito")
+         let carrito = document.getElementById("carrito")
+         let cancel = document.getElementById("button-cancel")
+         boton_carrito.addEventListener("click", function(event) {
+
+             carrito.classList.toggle("oculto")
+         })
+         cancel.addEventListener("click", function(event) {
+
+carrito.classList.toggle("oculto")
+})
+     });
+ </script>
+ <script src="./scripts/scripts.js"></script>
 </footer>
   <script src="/estilos/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
