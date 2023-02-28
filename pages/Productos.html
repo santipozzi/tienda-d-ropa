@@ -164,7 +164,7 @@
         <div class="card-body">
           <h5 class="card-title">Promo!</h5>
           <p class="card-text">Con una comprando superando los 150$USD tenes envio gratis y una funda de regalo.</p>
-          <a href="Carrito.html" data-id="1" data-precio="2500" data-nombre="lefleur" data-url="../multimedia/golf-le-fleur-x-converse-03.jpg" class="boton button_comprar">Ir al carrito</a>
+          <button href="Carrito.html" data-id="1" data-precio="2500" data-nombre="lefleur" data-url="../multimedia/golf-le-fleur-x-converse-03.jpg" class="boton button_comprar">Ir al carrito</a>
         </div>
       </div>
     </section>  
@@ -235,22 +235,7 @@
   <script src="/estilos/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <script src="/scripts/scripts.js"></script>
-  <script>
-    window.addEventListener("load", function(event) {
-       let boton_carrito = document.getElementById("btn-carrito")
-       let carrito = document.getElementById("carrito")
-       let cancel = document.getElementById("button-cancel")
-       boton_carrito.addEventListener("click", function(event) {
-
-           carrito.classList.toggle("oculto")
-       })
-       cancel.addEventListener("click", function(event) {
-
-carrito.classList.toggle("oculto")
-})
-   });
-</script>
-<script src="./js/main.js"></script>
+  
 </body>
 
 
